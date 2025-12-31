@@ -1,0 +1,8 @@
+<svg width="192" height="192" xmlns="http://www.w3.org/2000/svg">
+  <rect width="192" height="192" fill="#0A0A12"/>
+  <circle cx="96" cy="96" r="70" fill="none" stroke="#FFD700" stroke-width="4"/>
+  <path d="M 96 26 Q 146 96 96 166 Q 46 96 96 26" fill="none" stroke="#FFD700" stroke-width="3"/>
+  <path d="M 26 96 Q 96 146 166 96 Q 96 46 26 96" fill="none" stroke="#FFD700" stroke-width="3"/>
+  <circle cx="96" cy="96" r="10" fill="#FFD700"/>
+  <text x="96" y="110" font-family="Arial, sans-serif" font-size="80" fill="#FFD700" text-anchor="middle" font-weight="bold">φ</text>
+</svg>
