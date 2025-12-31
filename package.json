@@ -1,54 +1,23 @@
 {
-  "name": "golden-vortex",
+  "name": "golden-vortex-web",
   "version": "1.0.0",
-  "description": "Golden Chromatic Vortex - Interactive 3D Visualization",
-  "main": "main.js",
+  "description": "Golden Chromatic Vortex - PWA Version",
+  "type": "module",
   "scripts": {
-    "dev": "NODE_ENV=development concurrently \"vite\" \"wait-on http://localhost:5173 && electron .\"",
+    "dev": "vite",
     "build": "vite build",
-    "electron": "electron .",
-    "package": "npm run build && electron-builder"
+    "preview": "vite preview"
   },
-  "build": {
-    "appId": "com.jaymachado.goldenvortex",
-    "productName": "Golden Vortex",
-    "mac": {
-      "category": "public.app-category.graphics-design",
-      "target": [
-        "dmg",
-        "zip"
-      ]
-    },
-    "files": [
-      "dist/**/*",
-      "main.js",
-      "preload.js",
-      "package.json"
-    ],
-    "directories": {
-      "buildResources": "assets",
-      "output": "release"
-    }
-  },
-  "keywords": [
-    "electron",
-    "react",
-    "threejs",
-    "visualization"
-  ],
+  "keywords": ["pwa", "react", "threejs", "visualization", "golden-ratio"],
   "author": "Jay Machado",
   "license": "MIT",
-  "devDependencies": {
-    "@vitejs/plugin-react": "^5.1.2",
-    "concurrently": "^9.2.1",
-    "electron": "^39.2.7",
-    "electron-builder": "^26.0.12",
-    "vite": "^7.3.0",
-    "wait-on": "^9.0.3"
-  },
   "dependencies": {
-    "react": "^19.2.3",
-    "react-dom": "^19.2.3",
-    "three": "^0.182.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "three": "^0.160.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^5.0.8"
   }
 }
